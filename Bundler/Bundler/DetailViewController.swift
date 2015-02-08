@@ -48,6 +48,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         resultTable.registerNib(nib, forCellReuseIdentifier: "detailCell")
     }
     
+    @IBAction func alarmAction(sender: AnyObject) {
+        var alert = UIAlertController(title: "Renew Purchases", message: "Select a time amount to renew purchases", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "None", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Every Week", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Every Month", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("detailCell") as DetailTableViewCell

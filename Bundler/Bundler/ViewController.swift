@@ -42,6 +42,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return false;
     }
     
+    @IBAction func search(sender: AnyObject) {
+        self.performSegueWithIdentifier("toTableView", sender: self)
+    }
 }
 
 func save(shoppingList : [Bundle]) {
