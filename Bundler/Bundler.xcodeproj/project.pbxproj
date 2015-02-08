@@ -16,6 +16,7 @@
 		8FB13B4E1A86E877009689D7 /* BundlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B4D1A86E877009689D7 /* BundlerTests.swift */; };
 		8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */; };
 		8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B591A86EE4B009689D7 /* ResultViewController.swift */; };
+		8FB13B5E1A873B9E009689D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8FB13B4D1A86E877009689D7 /* BundlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlerTests.swift; sourceTree = "<group>"; };
 		8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		8FB13B591A86EE4B009689D7 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +88,9 @@
 				76EAC0A01A8707C700484059 /* ProductPull.swift */,
 				8FB13B371A86E877009689D7 /* AppDelegate.swift */,
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
-				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
 				8FB13B591A86EE4B009689D7 /* ResultViewController.swift */,
+				8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */,
+				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
 				8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */,
 				8FB13B3E1A86E877009689D7 /* Images.xcassets */,
 				8FB13B401A86E877009689D7 /* LaunchScreen.xib */,
@@ -227,6 +230,7 @@
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
 				76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */,
 				8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */,
+				8FB13B5E1A873B9E009689D7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

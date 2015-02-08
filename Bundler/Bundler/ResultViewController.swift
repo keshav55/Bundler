@@ -17,6 +17,8 @@ class CustomTableViewCell : UITableViewCell {
     
     func loadItem(#title: String, itemCount: Int, itemCost: Int, image: String) {
         bundleItemImage.image = UIImage(named: image)
+        self.bundleItemImage.layer.cornerRadius = self.bundleItemImage.frame.size.width / 2;
+        self.bundleItemImage.clipsToBounds = true;
         bundleTitle.text = title
         bundleItemCost.text = "$" + String(itemCost)
         bundleItemCount.text = String(itemCount) + " items"
