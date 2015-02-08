@@ -13,7 +13,7 @@ class DetailTableViewCell : UITableViewCell {
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailCost: UILabel!
     
-    func loadItem(title: String, itemCost: Int, image: String) {
+    func loadDetail(#title: String, itemCost: Int, image: String) {
         detailImage.image = UIImage(named: image)
         detailTitle.text = title
         detailCost.text = "$" + String(itemCost)
@@ -43,12 +43,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:CustomTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as CustomTableViewCell
+        var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as DetailTableViewCell
         
         // this is how you extract values from a tuple
         var (title, itemCost, image) = items[indexPath.row]
         
-        cell.loadItem(title: title, itemCost: itemCost, image: image)
+        cell.loadDetail(title: title, itemCost: itemCost, image: image)
         
         return cell
     }
