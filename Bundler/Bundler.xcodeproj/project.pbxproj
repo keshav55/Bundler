@@ -234,6 +234,7 @@
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
 				76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */,
 				8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */,
+				2F216F701A8745EE0053F77A /* Bundle.swift in Sources */,
 				8FB13B5E1A873B9E009689D7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
