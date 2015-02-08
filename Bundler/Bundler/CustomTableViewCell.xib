@@ -35,6 +35,12 @@
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="bundleItemCost" destination="Uuo-I1-M9V" id="sJk-Kk-sry"/>
+                <outlet property="bundleItemCount" destination="0Rq-WQ-2WU" id="7le-YK-SbS"/>
+                <outlet property="bundleItemImage" destination="FgM-1h-tGx" id="URX-No-Vyy"/>
+                <outlet property="bundleTitle" destination="PJN-gf-FFK" id="0zp-7C-0hd"/>
+            </connections>
             <point key="canvasLocation" x="437" y="400"/>
         </tableViewCell>
     </objects>

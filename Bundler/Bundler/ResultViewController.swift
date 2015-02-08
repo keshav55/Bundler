@@ -10,9 +10,9 @@ import UIKit
 
 class CustomTableViewCell : UITableViewCell {
     
+    @IBOutlet weak var bundleItemCost: UILabel!
     @IBOutlet weak var bundleTitle: UILabel!
     @IBOutlet weak var bundleItemCount: UILabel!
-    @IBOutlet weak var bundleItemCost: UILabel!
     @IBOutlet weak var bundleItemImage: UIImageView!
     
     func loadItem(#title: String, itemCount: Int, itemCost: Int, image: String) {
@@ -34,14 +34,13 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = false
-        self.navigationItem.setHidesBackButton(true, animated: false)
         self.navigationController?.title = "Search Results"
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         resultTable.registerNib(nib, forCellReuseIdentifier: "customCell")
     }
+    
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:CustomTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as CustomTableViewCell
@@ -86,6 +85,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidAppear(animated: Bool) {
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir Next", size: 23)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationController?.navigationBarHidden = false
     }
     
 
