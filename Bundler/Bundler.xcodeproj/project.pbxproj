@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F216F701A8745EE0053F77A /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F216F6F1A8745EE0053F77A /* Bundle.swift */; };
+		8F92DAD21A87CB45003DA98E /* NewBundleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92DAD11A87CB45003DA98E /* NewBundleViewController.swift */; };
+		8F92DAD41A87CFD2003DA98E /* CustomItemList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F92DAD31A87CFD2003DA98E /* CustomItemList.xib */; };
 		8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B371A86E877009689D7 /* AppDelegate.swift */; };
 		8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B391A86E877009689D7 /* ViewController.swift */; };
 		8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B3B1A86E877009689D7 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		2F216F6F1A8745EE0053F77A /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		8F92DAD11A87CB45003DA98E /* NewBundleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBundleViewController.swift; sourceTree = "<group>"; };
+		8F92DAD31A87CFD2003DA98E /* CustomItemList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomItemList.xib; sourceTree = "<group>"; };
 		8FB13B321A86E877009689D7 /* Bundler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB13B361A86E877009689D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB13B371A86E877009689D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
 				8FB13B591A86EE4B009689D7 /* ResultViewController.swift */,
 				8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */,
+				8F92DAD31A87CFD2003DA98E /* CustomItemList.xib */,
+				8F92DAD11A87CB45003DA98E /* NewBundleViewController.swift */,
 				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
 				8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */,
 				8FB13B5F1A873E8E009689D7 /* DetailViewTableCell.xib */,
@@ -211,6 +217,7 @@
 				8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */,
 				8FB13B421A86E877009689D7 /* LaunchScreen.xib in Resources */,
 				8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */,
+				8F92DAD41A87CFD2003DA98E /* CustomItemList.xib in Resources */,
 				8FB13B601A873E8E009689D7 /* DetailViewTableCell.xib in Resources */,
 				8FB13B3F1A86E877009689D7 /* Images.xcassets in Resources */,
 			);
@@ -235,6 +242,7 @@
 				8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */,
 				2F216F701A8745EE0053F77A /* Bundle.swift in Sources */,
 				8FB13B5E1A873B9E009689D7 /* DetailViewController.swift in Sources */,
+				8F92DAD21A87CB45003DA98E /* NewBundleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

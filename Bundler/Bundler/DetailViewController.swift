@@ -48,7 +48,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // this is how you extract values from a tuple
         var (title, itemCost, image) = items[indexPath.row]
         
-        cell.loadItem(title: title, itemCost: itemCost, image: image)
+        cell.loadItem(title, itemCost: itemCost, image: image)
         
         return cell
     }

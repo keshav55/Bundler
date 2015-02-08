@@ -109,6 +109,9 @@
                     <navigationItem key="navigationItem" title="Search Results" id="g5L-VT-Sto">
                         <barButtonItem key="leftBarButtonItem" image="previous" id="anr-z5-KfI">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backToMain:" destination="gQ6-jH-TOQ" id="VAb-iS-vD8"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="filter" id="qTd-RG-jpd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,7 +183,7 @@
         <!--New Bundle-->
         <scene sceneID="92M-Is-LLL">
             <objects>
-                <viewController id="Dez-gl-VwL" sceneMemberID="viewController">
+                <viewController id="Dez-gl-VwL" customClass="NewBundleViewController" customModule="Bundler" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0aN-XK-JJf"/>
                         <viewControllerLayoutGuide type="bottom" id="mT4-g7-2Ez"/>
@@ -188,11 +191,49 @@
                     <view key="view" contentMode="scaleToFill" id="LvA-eH-r3H">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a Bundle Title" textAlignment="center" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="8F8-qG-vMI">
+                                <rect key="frame" x="21" y="80" width="279" height="50"/>
+                                <color key="textColor" red="1" green="0.56078431370000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a Bundle Item" textAlignment="center" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="zcf-X0-1Hn">
+                                <rect key="frame" x="21" y="143" width="279" height="50"/>
+                                <color key="textColor" red="1" green="0.56078431370000004" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Items:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cr-o8-FkG">
+                                <rect key="frame" x="23" y="201" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.32156862745098042" green="0.32156862745098042" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="EPp-3I-7Yi">
+                                <rect key="frame" x="23" y="230" width="277" height="318"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Bundle" id="Ftw-Ae-cgA"/>
+                    <navigationItem key="navigationItem" title="New Bundle" id="Ftw-Ae-cgA">
+                        <barButtonItem key="leftBarButtonItem" image="previous" id="Tdz-9c-DW1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="backToMain:" destination="Dez-gl-VwL" id="PRw-WX-1u7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="edit" id="7Uw-bc-nX7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="bundleItemField" destination="zcf-X0-1Hn" id="cwX-iu-SuQ"/>
+                        <outlet property="bundleTitleField" destination="8F8-qG-vMI" id="6Ke-Mg-snq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blw-Iq-dBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,6 +261,8 @@
     <resources>
         <image name="Bundling Button" width="640" height="100"/>
         <image name="Search Bar" width="557" height="100"/>
+        <image name="Text Field" width="557" height="100"/>
+        <image name="edit" width="23" height="23"/>
         <image name="filter" width="20" height="20"/>
         <image name="party" width="500" height="500"/>
         <image name="previous" width="10" height="19"/>
