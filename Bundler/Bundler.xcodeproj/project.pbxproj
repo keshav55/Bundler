@@ -16,6 +16,7 @@
 		8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */; };
 		8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B591A86EE4B009689D7 /* ResultViewController.swift */; };
 		8FB13B5E1A873B9E009689D7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */; };
+		8FB13B601A873E8E009689D7 /* DetailViewTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B5F1A873E8E009689D7 /* DetailViewTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		8FB13B591A86EE4B009689D7 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8FB13B5F1A873E8E009689D7 /* DetailViewTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				8FB13B5D1A873B9E009689D7 /* DetailViewController.swift */,
 				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
 				8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */,
+				8FB13B5F1A873E8E009689D7 /* DetailViewTableCell.xib */,
 				8FB13B3E1A86E877009689D7 /* Images.xcassets */,
 				8FB13B401A86E877009689D7 /* LaunchScreen.xib */,
 				8FB13B351A86E877009689D7 /* Supporting Files */,
@@ -205,6 +208,7 @@
 				8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */,
 				8FB13B421A86E877009689D7 /* LaunchScreen.xib in Resources */,
 				8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */,
+				8FB13B601A873E8E009689D7 /* DetailViewTableCell.xib in Resources */,
 				8FB13B3F1A86E877009689D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
