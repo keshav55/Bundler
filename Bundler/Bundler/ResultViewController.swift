@@ -23,7 +23,7 @@ class CustomTableViewCell : UITableViewCell {
     }
 }
 
-class ResultViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var resultTable: UITableView!
     
