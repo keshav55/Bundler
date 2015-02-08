@@ -416,6 +416,7 @@
 				8FB13B531A86E877009689D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FB13B541A86E877009689D7 /* Build configuration list for PBXNativeTarget "BundlerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				8FB13B561A86E877009689D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
