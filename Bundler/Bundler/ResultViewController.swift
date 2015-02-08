@@ -34,7 +34,9 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.hidden = false
         self.navigationController?.title = "Search Results"
+        self.navigationItem.setHidesBackButton(true, animated: false)
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
@@ -84,8 +86,9 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir Next", size: 23)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        super.viewDidAppear(animated)
         self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir Next", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
     
 
