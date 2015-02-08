@@ -38,12 +38,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "DetailViewTableCell", bundle: nil)
-        resultTable.registerNib(nib, forCellReuseIdentifier: "customCell")
+        resultTable.registerNib(nib, forCellReuseIdentifier: "detailCell")
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as DetailTableViewCell
+        var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("detailCell") as DetailTableViewCell
         
         // this is how you extract values from a tuple
         var (title, itemCost, image) = items[indexPath.row]

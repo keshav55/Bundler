@@ -68,8 +68,11 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         println("You selected cell #\(indexPath.row)!")
+        self.performSegueWithIdentifier("toDetailView", sender: self)
+        
     }
     
+   
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count;
     }
