@@ -90,6 +90,5 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.navigationController?.navigationBarHidden = false
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir Next", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
-    
 
 }
