@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FA976CE1A87EDF900E0024E /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA976CD1A87EDF900E0024E /* Bundle.swift */; };
+		2FA976D31A87F07A00E0024E /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA976D21A87F07A00E0024E /* ProductTableViewCell.xib */; };
+		2FA976D51A87F1C000E0024E /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FA976D41A87F1C000E0024E /* LocalAuthentication.framework */; };
 		76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAC0A01A8707C700484059 /* ProductPull.swift */; };
-		76EAC0A61A874DDE00484059 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAC0A51A874DDE00484059 /* Bundle.swift */; };
-		76EAC0A71A874DDE00484059 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAC0A51A874DDE00484059 /* Bundle.swift */; };
 		8F110DA11A87E83500D0D292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F110D981A87E64500D0D292 /* Alamofire.framework */; };
 		8F110DA21A87E86F00D0D292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F110D981A87E64500D0D292 /* Alamofire.framework */; };
 		8F110DA31A87E86F00D0D292 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F110D981A87E64500D0D292 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,8 +94,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FA976CD1A87EDF900E0024E /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		2FA976D21A87F07A00E0024E /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		2FA976D41A87F1C000E0024E /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		76EAC0A01A8707C700484059 /* ProductPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductPull.swift; path = ../ProductPull.swift; sourceTree = "<group>"; };
-		76EAC0A51A874DDE00484059 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		76EAC0A81A87CCD900484059 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		8F110DA81A87EA3F00D0D292 /* NewBundleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBundleViewController.swift; sourceTree = "<group>"; };
 		8FB13B321A86E877009689D7 /* Bundler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA976D51A87F1C000E0024E /* LocalAuthentication.framework in Frameworks */,
 				8F110DA11A87E83500D0D292 /* Alamofire.framework in Frameworks */,
 				8F110DA21A87E86F00D0D292 /* Alamofire.framework in Frameworks */,
 			);
@@ -147,6 +151,7 @@
 		8FB13B291A86E877009689D7 = {
 			isa = PBXGroup;
 			children = (
+				2FA976D41A87F1C000E0024E /* LocalAuthentication.framework */,
 				8FB13B341A86E877009689D7 /* Bundler */,
 				8FB13B4A1A86E877009689D7 /* BundlerTests */,
 				8FB13B331A86E877009689D7 /* Products */,
@@ -165,6 +170,7 @@
 		8FB13B341A86E877009689D7 /* Bundler */ = {
 			isa = PBXGroup;
 			children = (
+				2FA976CD1A87EDF900E0024E /* Bundle.swift */,
 				76EAC0A01A8707C700484059 /* ProductPull.swift */,
 				8FB13B371A86E877009689D7 /* AppDelegate.swift */,
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
@@ -173,6 +179,7 @@
 				8F110DA81A87EA3F00D0D292 /* NewBundleViewController.swift */,
 				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
 				8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */,
+				2FA976D21A87F07A00E0024E /* ProductTableViewCell.xib */,
 				8FB13B5F1A873E8E009689D7 /* DetailViewTableCell.xib */,
 				8FB13B3E1A86E877009689D7 /* Images.xcassets */,
 				8FB13B401A86E877009689D7 /* LaunchScreen.xib */,
@@ -203,7 +210,6 @@
 			children = (
 				76EAC0A81A87CCD900484059 /* Alamofire.xcodeproj */,
 				8FB13B4C1A86E877009689D7 /* Info.plist */,
-				76EAC0A51A874DDE00484059 /* Bundle.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */,
+				2FA976D31A87F07A00E0024E /* ProductTableViewCell.xib in Resources */,
 				8FB13B421A86E877009689D7 /* LaunchScreen.xib in Resources */,
 				8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */,
 				8FB13B601A873E8E009689D7 /* DetailViewTableCell.xib in Resources */,
@@ -352,7 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */,
-				76EAC0A61A874DDE00484059 /* Bundle.swift in Sources */,
+				2FA976CE1A87EDF900E0024E /* Bundle.swift in Sources */,
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
 				76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */,
 				8F110DA91A87EA3F00D0D292 /* NewBundleViewController.swift in Sources */,
@@ -366,7 +373,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB13B4E1A86E877009689D7 /* BundlerTests.swift in Sources */,
-				76EAC0A71A874DDE00484059 /* Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
