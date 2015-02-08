@@ -20,6 +20,10 @@ class DetailTableViewCell : UITableViewCell {
         detailCost.text = "$" + String(itemCost)
     }
     
+    @IBAction func deleteButtonAction(sender: AnyObject) {
+        
+    }
+    
 }
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
