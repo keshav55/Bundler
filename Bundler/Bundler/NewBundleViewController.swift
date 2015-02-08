@@ -12,10 +12,11 @@ class NewBundleViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var bundleTitleField: UITextField!
     @IBOutlet weak var bundleItemField: UITextField!
+    @IBOutlet weak var tableViewList: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.navigationController?.navigationBar.hidden = false
         self.navigationController?.title = "New Bundle"
@@ -32,7 +33,7 @@ class NewBundleViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true);
         return false;
     }
-
+    
     @IBAction func backToMain(sender: AnyObject) {
         self.navigationController?.popViewControllerAnimated(true)
     }
@@ -56,4 +57,6 @@ class NewBundleViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Avenir Next", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
     }
     
+
+
 }

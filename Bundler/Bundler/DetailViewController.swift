@@ -14,7 +14,7 @@ class DetailTableViewCell : UITableViewCell {
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailCost: UILabel!
     
-    func loadItem(title: String, itemCost: Int, image: String) {
+    func loadDetail(#title: String, itemCost: Int, image: String) {
         detailImage.image = UIImage(named: image)
         detailTitle.text = title
         detailCost.text = "$" + String(itemCost)
@@ -40,14 +40,20 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "DetailViewTableCell", bundle: nil)
-        resultTable.registerNib(nib, forCellReuseIdentifier: "customCell")
+        resultTable.registerNib(nib, forCellReuseIdentifier: "detailCell")
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as DetailTableViewCell
+        var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("detailCell") as DetailTableViewCell
         
-        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/birthday+candles")
+       
+        
+        
+        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/", parameters: [String(): "xbox"])
+        
+        
+        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/xbox+one")
             //Just a string kek
         
             .responseString { (_, _, string, _) in
@@ -57,7 +63,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // this is how you extract values from a tuple
         var (title, itemCost, image) = items[indexPath.row]
         
-        cell.loadItem(title, itemCost: itemCost, image: image)
+        cell.loadDetail(title: title, itemCost: itemCost, image: image)
         
         return cell
     }

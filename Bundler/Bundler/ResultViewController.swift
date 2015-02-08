@@ -33,8 +33,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var resultTable: UITableView!
     
     var items: [(String, Int, Int, String)] = [
-        ("Party Supplies", 5, 120, "party.png"),
-        ("Dinner Party", 8, 100, "party.png")
+        ("Party Supplies", 5, 120, "party.png")
     ]
     
     override func viewDidLoad()
@@ -49,9 +48,6 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         resultTable.registerNib(nib, forCellReuseIdentifier: "customCell")
     }
     
-    @IBAction func backToMain(sender: AnyObject) {
-        self.navigationController?.popViewControllerAnimated(true)
-    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:CustomTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as CustomTableViewCell
@@ -75,20 +71,11 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         println("You selected cell #\(indexPath.row)!")
+        self.performSegueWithIdentifier("toDetailView", sender: self)
+        
     }
     
-    func colorForIndex(index: Int) -> UIColor
-    {
-        if (index%2 == 0)
-        {
-            return UIColor.whiteColor()
-        }
-        else
-        {
-            return UIColor(hue:1, saturation:0.02, brightness:0.99, alpha:1)
-        }
-    }
-    
+   
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count;
     }
