@@ -106,7 +106,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search Results" id="g5L-VT-Sto"/>
+                    <navigationItem key="navigationItem" title="Search Results" id="g5L-VT-Sto">
+                        <barButtonItem key="leftBarButtonItem" image="previous" id="anr-z5-KfI">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="filter" id="qTd-RG-jpd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -160,6 +167,8 @@
     <resources>
         <image name="Bundling Button" width="640" height="100"/>
         <image name="Search Bar" width="557" height="100"/>
+        <image name="filter" width="30" height="30"/>
+        <image name="previous" width="15" height="28"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
