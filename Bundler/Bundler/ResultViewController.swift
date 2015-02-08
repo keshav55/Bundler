@@ -17,11 +17,14 @@ class CustomTableViewCell : UITableViewCell {
     
     func loadItem(#title: String, itemCount: Int, itemCost: Int, image: String) {
         bundleItemImage.image = UIImage(named: image)
+        
         self.bundleItemImage.layer.cornerRadius = self.bundleItemImage.frame.size.width / 2;
         self.bundleItemImage.clipsToBounds = true;
         bundleTitle.text = title
         bundleItemCost.text = "$" + String(itemCost)
         bundleItemCount.text = String(itemCount) + " items"
+        
+       
     }
 }
 
@@ -38,7 +41,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = false
         self.navigationController?.title = "Search Results"
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
