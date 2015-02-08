@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import LocalAuthentication
 
 class DetailTableViewCell : UITableViewCell {
     @IBOutlet weak var detailImage: UIImageView!
@@ -82,7 +83,31 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        println("You selected cell #\(indexPath.row)!")
+        var authenticationObject = LAContext()
+        var authenticationError:NSError?
+        
+        authenticationObject.canEvaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, error: &authenticationError)
+        
+        if(authenticationError != nil) {
+            println("Authentication does not exist for this ios")
+        } else {
+            authenticationObject.evaluatePolicy(LAPolicy.DeviceOwnerAuthenticationWithBiometrics, localizedReason: "Buy Now", reply: { (complete : Bool!, error : NSError!) -> Void in
+                if (error != nil ){
+                    println(error.localizedDescription);
+                }
+                else {
+                    if (complete == true) {
+                        println("authentication successful")
+                        var alert = UIAlertController(title: "Alert", message: "Order Confirmed", preferredStyle: UIAlertControllerStyle.Alert)
+                        alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.Default, handler: nil))
+                        self.presentViewController(alert, animated: true, completion: nil)
+                    } else {
+                        println("authentication failed")
+                    }
+                }
+            })
+        }
+
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
