@@ -47,7 +47,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("detailCell") as DetailTableViewCell
         
-        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/birthday+candles")
+       
+        
+        
+        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/", parameters: [String(): "xbox"])
+        
+        
+        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/xbox+one")
             //Just a string kek
         
             .responseString { (_, _, string, _) in
