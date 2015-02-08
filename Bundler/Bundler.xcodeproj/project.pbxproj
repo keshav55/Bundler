@@ -13,6 +13,8 @@
 		8FB13B3F1A86E877009689D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B3E1A86E877009689D7 /* Images.xcassets */; };
 		8FB13B421A86E877009689D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B401A86E877009689D7 /* LaunchScreen.xib */; };
 		8FB13B4E1A86E877009689D7 /* BundlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B4D1A86E877009689D7 /* BundlerTests.swift */; };
+		8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */; };
+		8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B591A86EE4B009689D7 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		8FB13B471A86E877009689D7 /* BundlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BundlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB13B4C1A86E877009689D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB13B4D1A86E877009689D7 /* BundlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlerTests.swift; sourceTree = "<group>"; };
+		8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		8FB13B591A86EE4B009689D7 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				8FB13B371A86E877009689D7 /* AppDelegate.swift */,
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
 				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
+				8FB13B591A86EE4B009689D7 /* ResultViewController.swift */,
+				8FB13B571A86EDF3009689D7 /* CustomTableViewCell.xib */,
 				8FB13B3E1A86E877009689D7 /* Images.xcassets */,
 				8FB13B401A86E877009689D7 /* LaunchScreen.xib */,
 				8FB13B351A86E877009689D7 /* Supporting Files */,
@@ -161,6 +167,7 @@
 				TargetAttributes = {
 					8FB13B311A86E877009689D7 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Z2C9XZNEUU;
 					};
 					8FB13B461A86E877009689D7 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -194,6 +201,7 @@
 			files = (
 				8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */,
 				8FB13B421A86E877009689D7 /* LaunchScreen.xib in Resources */,
+				8FB13B581A86EDF3009689D7 /* CustomTableViewCell.xib in Resources */,
 				8FB13B3F1A86E877009689D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +222,7 @@
 			files = (
 				8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */,
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
+				8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Bundler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Bundler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
