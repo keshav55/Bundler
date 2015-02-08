@@ -15,7 +15,6 @@
 		8F110DA21A87E86F00D0D292 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F110D981A87E64500D0D292 /* Alamofire.framework */; };
 		8F110DA31A87E86F00D0D292 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F110D981A87E64500D0D292 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F110DA91A87EA3F00D0D292 /* NewBundleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F110DA81A87EA3F00D0D292 /* NewBundleViewController.swift */; };
-		8F2B60CE1A87F3F200633699 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2B60CD1A87F3F200633699 /* Bundle.swift */; };
 		8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B371A86E877009689D7 /* AppDelegate.swift */; };
 		8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B391A86E877009689D7 /* ViewController.swift */; };
 		8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B3B1A86E877009689D7 /* Main.storyboard */; };
@@ -101,7 +100,6 @@
 		76EAC0A01A8707C700484059 /* ProductPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductPull.swift; path = ../ProductPull.swift; sourceTree = "<group>"; };
 		76EAC0A81A87CCD900484059 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		8F110DA81A87EA3F00D0D292 /* NewBundleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBundleViewController.swift; sourceTree = "<group>"; };
-		8F2B60CD1A87F3F200633699 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = ../../../../../../../Volumes/USB20FD/Bundle.swift; sourceTree = "<group>"; };
 		8FB13B321A86E877009689D7 /* Bundler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB13B361A86E877009689D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB13B371A86E877009689D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -172,11 +170,7 @@
 		8FB13B341A86E877009689D7 /* Bundler */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				8F2B60CD1A87F3F200633699 /* Bundle.swift */,
-=======
 				2FA976CD1A87EDF900E0024E /* Bundle.swift */,
->>>>>>> 673d4e717ce5708017477f59a7907ff781117888
 				76EAC0A01A8707C700484059 /* ProductPull.swift */,
 				8FB13B371A86E877009689D7 /* AppDelegate.swift */,
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
@@ -365,11 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */,
-<<<<<<< HEAD
-				8F2B60CE1A87F3F200633699 /* Bundle.swift in Sources */,
-=======
 				2FA976CE1A87EDF900E0024E /* Bundle.swift in Sources */,
->>>>>>> 673d4e717ce5708017477f59a7907ff781117888
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
 				76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */,
 				8F110DA91A87EA3F00D0D292 /* NewBundleViewController.swift in Sources */,

@@ -213,6 +213,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xri-Zy-E3x">
                                 <rect key="frame" x="21" y="221" width="278" height="332"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Dez-gl-VwL" id="CCN-dZ-Kfo"/>
+                                    <outlet property="delegate" destination="Dez-gl-VwL" id="EAL-PL-V2i"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter a Bundle Item" textAlignment="center" minimumFontSize="17" background="Text Field" translatesAutoresizingMaskIntoConstraints="NO" id="sGe-pz-wiL">
                                 <rect key="frame" x="21" y="135" width="278" height="50"/>
