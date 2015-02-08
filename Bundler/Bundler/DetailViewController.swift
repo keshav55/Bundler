@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class DetailTableViewCell : UITableViewCell {
     @IBOutlet weak var detailImage: UIImageView!
@@ -24,6 +25,7 @@ class DetailTableViewCell : UITableViewCell {
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var resultTable: UITableView!
+    
     
     var items: [(String, Int, String)] = [
         ("Magic Candles", 5, "party.png")
@@ -44,6 +46,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as DetailTableViewCell
+        
+        Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/birthday+candles")
+        
+            .responseString { (_, _, string, _) in
+                println(string)
+        }
         
         // this is how you extract values from a tuple
         var (title, itemCost, image) = items[indexPath.row]

@@ -17,11 +17,14 @@ class CustomTableViewCell : UITableViewCell {
     
     func loadItem(#title: String, itemCount: Int, itemCost: Int, image: String) {
         bundleItemImage.image = UIImage(named: image)
+        
         self.bundleItemImage.layer.cornerRadius = self.bundleItemImage.frame.size.width / 2;
         self.bundleItemImage.clipsToBounds = true;
         bundleTitle.text = title
         bundleItemCost.text = "$" + String(itemCost)
         bundleItemCount.text = String(itemCount) + " items"
+        
+       
     }
 }
 
@@ -30,7 +33,8 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var resultTable: UITableView!
     
     var items: [(String, Int, Int, String)] = [
-        ("Party Supplies", 5, 120, "party.png")
+        ("Party Supplies", 5, 120, "party.png"),
+        ("Dinner Party", 8, 100, "party.png")
     ]
     
     override func viewDidLoad()
@@ -38,7 +42,7 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.navigationController?.navigationBar.hidden = false
         self.navigationController?.title = "Search Results"
-        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         // Do any additional setup after loading the view.
         
         var nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
@@ -71,6 +75,18 @@ class ResultViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         println("You selected cell #\(indexPath.row)!")
+    }
+    
+    func colorForIndex(index: Int) -> UIColor
+    {
+        if (index%2 == 0)
+        {
+            return UIColor.whiteColor()
+        }
+        else
+        {
+            return UIColor(hue:1, saturation:0.02, brightness:0.99, alpha:1)
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
