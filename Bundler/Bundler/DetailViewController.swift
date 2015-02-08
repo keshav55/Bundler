@@ -48,6 +48,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         var cell:DetailTableViewCell = self.resultTable.dequeueReusableCellWithIdentifier("customCell") as DetailTableViewCell
         
         Alamofire.request(.GET, "http://bundlerapp.herokuapp.com/product.json/birthday+candles")
+            //Just a string kek
         
             .responseString { (_, _, string, _) in
                 println(string)
