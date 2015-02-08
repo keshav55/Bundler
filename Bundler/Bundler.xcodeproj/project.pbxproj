@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAC0A01A8707C700484059 /* ProductPull.swift */; };
 		8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B371A86E877009689D7 /* AppDelegate.swift */; };
 		8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB13B391A86E877009689D7 /* ViewController.swift */; };
 		8FB13B3D1A86E877009689D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB13B3B1A86E877009689D7 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76EAC0A01A8707C700484059 /* ProductPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductPull.swift; path = ../ProductPull.swift; sourceTree = "<group>"; };
 		8FB13B321A86E877009689D7 /* Bundler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB13B361A86E877009689D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FB13B371A86E877009689D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		8FB13B341A86E877009689D7 /* Bundler */ = {
 			isa = PBXGroup;
 			children = (
+				76EAC0A01A8707C700484059 /* ProductPull.swift */,
 				8FB13B371A86E877009689D7 /* AppDelegate.swift */,
 				8FB13B391A86E877009689D7 /* ViewController.swift */,
 				8FB13B3B1A86E877009689D7 /* Main.storyboard */,
@@ -222,6 +225,7 @@
 			files = (
 				8FB13B3A1A86E877009689D7 /* ViewController.swift in Sources */,
 				8FB13B381A86E877009689D7 /* AppDelegate.swift in Sources */,
+				76EAC0A11A8707C700484059 /* ProductPull.swift in Sources */,
 				8FB13B5A1A86EE4B009689D7 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
